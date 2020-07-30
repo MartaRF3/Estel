@@ -1,0 +1,182 @@
+:root {
+/*Colors*/
+    --primary-clr:  #8FFF7E; /* Primary color */
+    --secondary-clr: #85EFFF; /* Secondary color */
+    --secondary-clr-dark: #5b50a8; /* Secondary Dark color */
+    --secondary-clr-light: #ffffff; /* Secondary Light color*/
+    --accent-clr: #EDEB5F; /* Accent color */
+/*Fonts*/
+    --ff-b: 'Quicksand', sans-serif; /* Font family - Body */
+    --ff-t: 'Cabin Sketch', cursive; /* Font family - Titles */
+    --fw-l: 300; /* Font weight - light */
+    --fw-r: 400; /* Font weight - regular */
+    --fw-b: 700; /* Font weight - bold */
+    --fs-h1: 40px; /* Font size - h1 - 35pt*/
+    --fs-h2: 25px; /* Font size - h2 */
+    --fs-nav: 20px; /* Font size - nav - 15pt*/
+    --fs-b: 16px; /* Font size - body - 312pt*/
+    --fs-sb: 14px; /* Font size - subbody */
+/*Effects*/
+    --shadow-l: 10px 10px 17px -13px rgba(110,110,110,0.7);/* light shadow */
+    --shadow-d: 10px 10px 5px 0px rgba(0,0,0,0.75); /* dense shadow */
+/*Borders*/
+    --br-r: 30px; /* Border - rounded */
+    --br-s: 10px; /* Border - squared */
+    --border-g: var(--primary-clr) 1px solid; /* Border - green */
+/*Spacing*/
+    --spacer-s: 1rem;                      /* Spacing - small */
+    --spacer-m: calc(var(--spacer-s)*2);    /* Spacing - medium */
+    --spacer-b: calc(var(--spacer-s)*3);    /* Spacing - big */
+    --padding-s: 0.5rem;                     /* Padding - small */
+    --padding-m: calc(var(--padding-s)*2);  /* Padding - medium */
+    --padding-b: calc(var(--padding-s)*3);  /* Padding - big */
+}
+html {
+    background-color: var(--secondary-clr);
+}
+body {
+    font-family: var(--ff-b);
+    font-weight: var(--fw-r);
+    font-size: var(--fs-b);
+}
+.wrapper {
+    background: 
+    /* top, image */
+        url(../images/clouds.svg),
+    /* bottom, gradient */ 
+        linear-gradient(
+            #85efff, #92f1ff, #9ef2ff, #aaf4ff, #b5f5ff, 
+            #c0f6ff, #cbf7ff, #d6f8ff, #e3f9ff, #f0faff, 
+            #fafcff, #ffffff
+        );
+    background-attachment: fixed, scroll;
+    background-size: 350px 350px, cover;
+}
+.header {
+}
+.footer {
+    background-color: var(--primary-clr);
+    color: #000;
+    padding: var(--padding-m);
+    font-size: var(--fs-sb);
+
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr;
+    /* grid-template-columns: 100px 1fr 1fr; */
+    grid-gap: var(--padding-m);
+    justify-items: center;
+
+    height: 132px;
+}
+.header__title {
+    background-color: var(--primary-clr);
+    font-family: var(--ff-t);
+    font-size: var(--fs-h1);
+    font-weight: var(--fw-b);
+    padding: var(--padding-m);
+    text-align: center;
+    margin: var(--spacer-s) 0 var(--spacer-s) 0;
+    text-transform: uppercase;
+}
+.header__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar {
+    position: relative;
+    
+    width: 100%;
+    max-width: 500px;
+    min-width: 360px;
+    height: 450px;
+
+
+    background-image: url(../images/tierra_full.svg);
+    background-size: 60% auto;
+    background-repeat: no-repeat;
+    background-position: center 40%;
+}
+.nav__item {
+    width: 130px;
+    background-color: var(--secondary-clr-light);
+    border-radius: var(--br-r);
+    padding: var(--padding-s) var(--padding-m) var(--padding-s) var(--padding-m);
+    text-align: center;
+    font-size: var(--fs-nav);
+    font-family: var(--ff-t), sans-serif;
+    box-shadow: var(--shadow-l);
+
+    position: absolute;
+}
+.nav__item-1 {
+    top: 40%;
+    left: 5%;
+}
+.nav__item-1 ::before {
+    content: url(../images/tail.svg);
+    position: absolute;
+    bottom: -70%;
+    right: 0;
+}
+.nav__item-2 {
+    top: 40%;
+    right: 5%;
+}
+.nav__item-2 ::before {
+    content: url(../images/tail.svg);
+    position: absolute;
+    bottom: -70%;
+    left: 0;
+    transform: scaleX(-1);
+}
+.nav__item-3 {
+    bottom: 10%;
+    left: 5%;
+}
+.nav__item-3 ::before {
+    content: url(../images/tail.svg);
+    position: absolute;
+    top: -70%;
+    right: 0;
+    transform: scaleY(-1);
+}
+.nav__item-4 {
+    bottom: 10%;
+    right: 5%;
+}
+.nav__item-4 ::before {
+    content: url(../images/tail.svg);
+    position: absolute;
+    top: -70%;
+    left: 0;
+    transform: scale(-1, -1);
+}
+.footer > div {
+}
+.footer__social {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.footer__social a {
+    border-radius: var(--br-s);
+    width: 50px;
+    height: 50px;
+}
+.footer__social img {
+    width: 100%;
+}
+.footer-style {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: var(--br-s);
+
+    height: 100%;
+    width: 100%;
+    max-width: 150px;
+}
+.footer__patrocinadores {
+
+}
+.footer__authors {
+}
+

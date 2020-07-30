@@ -1,0 +1,39 @@
+/*** HOME ***/
+.main__home {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  margin:  0 var(--spacer-m) var(--spacer-m) var(--spacer-m);
+}
+.audio__wrapper {
+  width: 100%;
+  max-width: 500px;
+  height: 70px;
+
+  border: var(--border-g);
+  background-color: var(--secondary-clr-light);
+  box-shadow: var(--shadow-l);
+  border-radius: var(--br-s);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home__content {
+  background-color: var(--secondary-clr-light);
+  box-shadow: var(--shadow-l);
+  border-radius: var(--br-r);
+  margin: var(--spacer-b) 0 var(--spacer-b) 0;
+  padding: var(--padding-m);
+}
+.home__subtitle {
+  font-family: var(--ff-t);
+  text-transform: uppercase;
+  font-size: var(--fs-h2);
+  text-align: center;
+}
+.home__intro {
+
+}
+/*** NOSOTROS ***/
